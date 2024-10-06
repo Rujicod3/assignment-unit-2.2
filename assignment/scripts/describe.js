@@ -33,15 +33,15 @@ if (number >= 2) {
 
 // 1.
 // DESCRIPTION
+// We make a variable called name and make Dane the name.
+// Then we check if name exactly matches Mary. If its true,
+// 'Hi, Mary!' will be console.logged. If its false, then
+// 'How do you do?' will be console.logged. 
 // 
-// 
-//
-//
-//
 //
 //
 // OUTCOME:
-//
+//'How do you do?' is what is logged.
 
 // CODE:
 /*
@@ -59,12 +59,14 @@ if (name === 'Mary') {
 
 // 2.
 // DESCRIPTION:
-// 
-// 
-// 
-//
+// We make a variable called secret that we dont initialize.
+// we make another variable called code and set it to 123 as a number. 
+// Then we check if code is exactly 123. If it is, secret is given the 
+// string value 'super'. And code is multiplied by 2. We also check if 
+// code is great than 250. If it is, secret is given the string value 
+// 'duper'. The console logs the value of secret.
 // OUTCOME:
-//
+// 'super' was console.logged.
 
 // CODE:
 /*
@@ -89,12 +91,20 @@ console.log(secret)
 
 // 3.
 // DESCRIPTION
-// 
-// 
-// 
-//
+// We make a variable named isStudent and give it a boolean value of true. 
+// We make another variable named age and set it to 34 as a 
+// number. And then a final variable called zip and set it to
+// 55407 as a number. Then we check if isStudent is exactly true 
+// and zip is greater than 80000. If it is, 'You're a student on
+// the West Coast!' will be console.logged. If it isn't true, then we check if
+// isStudent is exactly false or age is less than 30. And if 
+// either is true, 'What are your hobbies?' is console.logged.
+// if neither are true, then we check if isStudent is exactly 
+// true. If it is, then 'Welcome to Prime!' is console.logged. If
+// that is not true, then 'How about the weather?' is
+// console.logged.
 // OUTCOME:
-//
+//'Welcome to Prime!' is console.logged
 
 // CODE:
 /*
@@ -154,12 +164,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 // CODE:
+// FIX - colorOne is set to red and colorTwo is set to blue, colorOne should
+// be set to blue and colorTwo should be set to red.
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+// Fix - colorTwo should also be set to purple.
   colorOne = 'purple';
 }
 */
@@ -177,7 +190,7 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
-
+// FIX The logical operator should be set to && instead of the ||.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -197,9 +210,17 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// FIX minAge <= age check s if minAge is less than or equal to age
+// and the instructions state to check if minAge is greater than or equal
+// to age and so the fix is minAge >= age.
 if(minAge <= age) {
+  // FIX this logs 'no entry' but the instructions say if the conditions
+  // evaluates to true, log 'enter'.
   console.log('no entry');
 } else {
+ // FIX This logs 'enter' but the instructions doesn't have an else
+// statement and should only log 'enter' if the condition 
+// minAge >= age evaluates to true.
   console.log('enter');
 }
 */
